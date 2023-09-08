@@ -110,7 +110,6 @@ body {
 }
 
 .header {
-  height: 100vh;
   background: linear-gradient(to top right, rgb(2, 3, 129), rgb(155, 81, 224));
   position: relative;
 }
@@ -185,34 +184,33 @@ body {
   max-width: 117rem;
   width: 90vw;
   margin: 0 auto;
-  padding: 10rem 0 0rem;
+  padding: 6rem 0 4rem;
 }
 
 .hero h6 {
   font-family: var(--primary-1-font);
   text-transform: capitalize;
-  font-size: 2rem;
+  font-size: 1.6rem;
   color: var(--white);
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
 }
 
 .hero h1 {
-  font-size: 3.8rem;
-  line-height: 1.7;
-  font-weight: 900;
-  max-width: 85%;
+  font-size: 3.1rem;
+  line-height: 1.5;
+  font-weight: bold;
   color: var(--white);
-  margin-bottom: 9rem;
+  margin-bottom: 6rem;
 }
 
 .hero-footer {
   display: grid;
-  gap: 4rem;
+  gap: 3rem;
 }
 
 .hero-footer h4 {
   text-transform: uppercase;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   color: var(--white);
 }
 
@@ -272,6 +270,12 @@ input[type="submit"] {
 }
 
 @media screen and (min-width: 768px) {
+  .hero h1 {
+    font-size: 3.5rem;
+    max-width: 90%;
+    margin-bottom: 9rem;
+  }
+
   .hero-footer {
     grid-template-columns: 1.5fr 1fr;
   }
@@ -296,6 +300,15 @@ input[type="submit"] {
         rgb(155, 81, 224, 0.95)
       ),
       url(pexels-pixabay-39284.jpg) no-repeat center/cover;
+  }
+
+  .hero h1 {
+    font-size: 4rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.8;
+    font-weight: 900;
+    color: var(--white);
+    margin-bottom: 6rem;
   }
 
   .navigation {
