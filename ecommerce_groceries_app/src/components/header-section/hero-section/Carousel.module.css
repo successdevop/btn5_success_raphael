@@ -1,0 +1,19 @@
+.hero {
+  display: grid;
+}
+
+.carouselContentInfo {
+}
+
+.headline {
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 1.25;
+  letter-spacing: 0.2rem;
+}
+
+.hero h4 {
+  font-size: 2rem;
+  line-height: 1.5;
+  letter-spacing: 1.5;
+}
