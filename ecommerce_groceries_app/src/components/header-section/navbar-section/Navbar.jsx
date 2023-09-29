@@ -11,7 +11,7 @@ function Navbar() {
       <div>
         <h3 className={styles["navbar-brand"]}>Bandage</h3>
       </div>
-      {/* nav links */}
+      {/* nav links for mobile */}
       <ul className={styles["navbar-nav"]}>
         <li>
           <NavLink to="">Home</NavLink>
