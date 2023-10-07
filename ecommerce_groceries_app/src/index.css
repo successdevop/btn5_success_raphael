@@ -51,14 +51,20 @@ button {
   padding: 7rem 0rem;
 }
 
-.secondSection {
+.secondSection,
+.fourthSection {
   padding: 0 2rem;
 }
 
-.secondSectionCardContainer {
+.secondSectionCardContainer,
+.fourthSectionCardContainer {
   padding-top: 3rem;
   display: grid;
   gap: 3rem;
+}
+
+.productContainer {
+  padding: 0.8rem 0;
 }
 
 .thirdSection {
@@ -72,12 +78,17 @@ button {
 }
 
 @media all and (min-width: 1200px) {
+  .productContainer {
+    padding: 0;
+  }
+
   .firstSection {
     grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
     margin: 0 auto;
   }
 
-  .secondSection {
+  .secondSection,
+  .fourthSection {
     padding: 4.8rem 2rem;
     display: grid;
     grid-template-columns: 30rem 1fr;
@@ -85,9 +96,16 @@ button {
     margin: 0 auto;
   }
 
+  .fourthSection {
+    grid-template-columns: 1fr 30rem;
+  }
+
+  .fourthSection > :first-child {
+    order: 1;
+  }
+
   .secondSectionCardContainer {
     padding-top: 0rem;
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
   }

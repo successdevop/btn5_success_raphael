@@ -1,11 +1,14 @@
-import styles from "./ProductHeaderInfo.module.css";
 import { CiCircleChevLeft, CiCircleChevRight } from "react-icons/ci";
-import SectionTitle from "./SectionTitle";
 
-function ProductHeaderInfo() {
+import styles from "./ProductHeaderNav.module.css";
+
+function ProductHeaderNav() {
   return (
     <div className={styles.productHeaderInfoContainer}>
-      <SectionTitle />
+      <div className={styles.sectionTitle}>
+        <h3>BESTSELLER PRODUCTS</h3>
+      </div>
+
       <div className={styles.productHeaderInfo}>
         <ul className={styles.genderBox}>
           <li>
@@ -31,4 +34,4 @@ function ProductHeaderInfo() {
   );
 }
 
-export default ProductHeaderInfo;
+export default ProductHeaderNav;

@@ -2,6 +2,14 @@
   border-bottom: 0.1rem solid #737373;
 }
 
+.sectionTitle {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 3.2rem;
+  letter-spacing: 0.1rem;
+}
+
 .productHeaderInfo {
   padding: 2.4rem 0;
 
@@ -37,7 +45,7 @@
   .productHeaderInfoContainer {
     display: flex;
     align-items: center;
-    gap: 10rem;
+    gap: 12rem;
   }
 
   .productHeaderInfo {

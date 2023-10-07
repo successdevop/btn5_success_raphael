@@ -1,14 +1,11 @@
-import styles from "./ProductCard.module.css";
-import manOnBike from "../../../assets/images/manOnBike.svg";
-import meatInPlate from "../../../assets/images/meatInPlate.svg";
-import GeneralInfoCard from "../../general-components/GeneralInfoCard";
+import styles from "./GeneralProductBanner.module.css";
 
-function ProductCard() {
+function GeneralProductBanner({ mainImg, otherImg, children }) {
   return (
     <div className={styles.productCard}>
       <div className={styles.productCardImgBox}>
         <img
-          src={manOnBike}
+          src={mainImg}
           alt="man on bike"
           className={styles.productCardImg}
         />
@@ -20,15 +17,9 @@ function ProductCard() {
           keystroke away.
         </p>
         <div className={styles.infoImgBox}>
-          <img src={meatInPlate} alt="meat in plate" />
+          <img src={otherImg} alt="meat in plate" />
         </div>
-        <GeneralInfoCard
-          headerText="English Department"
-          headerFontSize={1.4}
-          mainText="&#10515; 15 Sales"
-          textFontSize={1.3}
-          alignItems="center"
-        />
+        {children}
         <div className={styles.colorBox}>
           <div className={`${styles.color} ${styles["color-1"]}`}></div>
           <div className={`${styles.color} ${styles["color-2"]}`}></div>
@@ -40,4 +31,4 @@ function ProductCard() {
   );
 }
 
-export default ProductCard;
+export default GeneralProductBanner;

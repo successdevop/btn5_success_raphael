@@ -1,18 +1,19 @@
 import Container from "../../general-components/Container";
-import Section from "../../general-components/Section";
-import ProductCardFooter from "./ProductCardFooter";
-
-import GeneralProductBanner from "../../general-components/GeneralProductBanner";
 import GeneralInfoCard from "../../general-components/GeneralInfoCard";
+import GeneralProductBanner from "../../general-components/GeneralProductBanner";
+import Section from "../../general-components/Section";
 
-import manOnBike from "../../../assets/images/manOnBike.svg";
-import meatInPlate from "../../../assets/images/meatInPlate.svg";
+import aGirlWithDoughtnut from "../../../assets/images/aGirlWithDoughtnut.svg";
+import caramelCashew from "../../../assets/images/caramelCashew.svg";
 
 function index() {
   return (
     <Section>
       <Container className={"thirdSection"}>
-        <GeneralProductBanner mainImg={manOnBike} otherImg={meatInPlate}>
+        <GeneralProductBanner
+          mainImg={aGirlWithDoughtnut}
+          otherImg={caramelCashew}
+        >
           <GeneralInfoCard
             headerText="English Department"
             headerFontSize={1.4}
@@ -21,8 +22,6 @@ function index() {
             alignItems="center"
           />
         </GeneralProductBanner>
-
-        <ProductCardFooter />
       </Container>
     </Section>
   );
