@@ -1,0 +1,51 @@
+.productCardFooter {
+  padding: 1rem 0 4rem;
+}
+
+.productCardFooter ol {
+  list-style: none;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  padding: 0 3rem;
+  gap: 3rem;
+}
+
+.productCardFooter ol li {
+  display: flex;
+  gap: 2rem;
+}
+
+.number,
+.info h5 {
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+}
+
+.number {
+  color: #e74040;
+  font-size: 4rem;
+  line-height: 5rem;
+}
+
+.info h5 {
+  color: #252b42;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+}
+.info p {
+  color: #737373;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  letter-spacing: 0.02rem;
+}
+
+@media screen and (min-width: 912px) {
+  .productCardFooter {
+    padding: 6rem 0;
+  }
+
+  .productCardFooter ol {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

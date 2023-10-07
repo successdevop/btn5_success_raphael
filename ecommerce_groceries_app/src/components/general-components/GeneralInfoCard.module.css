@@ -1,0 +1,55 @@
+.productInfo {
+  display: grid;
+  gap: 1rem;
+}
+
+.infoHeader,
+.text,
+.price span {
+  color: #252b42;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  letter-spacing: 0.1rem;
+}
+
+.text {
+  display: block;
+  color: #737373;
+  font-size: 1.4rem;
+  letter-spacing: 0.2rem;
+}
+
+.price {
+  display: flex;
+  padding: 0.5rem 0.3rem;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.price span {
+  color: #bdbdbd;
+}
+
+.price span:last-child {
+  color: #23856d;
+}
+
+@media screen and (min-width: 820px) {
+  .productInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    align-items: start;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .productInfo {
+    display: grid;
+    gap: 1rem;
+  }
+}
