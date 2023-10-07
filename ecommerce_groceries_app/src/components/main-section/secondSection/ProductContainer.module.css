@@ -1,0 +1,9 @@
+.productContainer {
+  padding: 0.8rem 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .productContainer {
+    padding: 0;
+  }
+}

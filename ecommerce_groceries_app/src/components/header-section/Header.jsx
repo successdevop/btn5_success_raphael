@@ -1,5 +1,5 @@
-import Carousel from "./hero-section/Carousel";
-import Navbar from "./navbar-section/Navbar";
+import Carousel from "./Carousel";
+import Navbar from "./Navbar";
 
 function Header() {
   return (

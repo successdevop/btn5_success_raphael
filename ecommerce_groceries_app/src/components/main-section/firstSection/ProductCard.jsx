@@ -1,24 +1,19 @@
 import styles from "./ProductCard.module.css";
-import apple from "./images/apple.svg";
 
-function ProductCard() {
+function ProductCard({ img, headerText, mainText, footerText }) {
   return (
-    <section className={styles.productCard}>
-      <div className={styles.container}>
-        <div className={styles.card}>
-          <div className={styles.cardContainer}>
-            <div className={styles.cardInfo}>
-              <h6 className={styles.paragraph}>your space</h6>
-              <h2>unique life</h2>
-              <h6 className={styles.small}>explore items</h6>
-            </div>
-            <div className={styles.cardImg}>
-              <img src={apple} alt="apple" />
-            </div>
-          </div>
+    <div className={styles.card}>
+      <div className={styles.cardContainer}>
+        <div className={styles.cardInfo}>
+          <h6 className={styles.headerText}>{headerText}</h6>
+          <h2 className={styles.mainText}>{mainText}</h2>
+          <h6 className={styles.footerText}>{footerText}</h6>
+        </div>
+        <div className={styles.cardImg}>
+          <img src={img} alt={`${mainText} img`} />
         </div>
       </div>
-    </section>
+    </div>
   );
 }
 

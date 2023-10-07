@@ -1,9 +1,11 @@
-import ProductCard from "./firstSection/ProductCard";
+import FirstSection from "./firstSection/index";
+import SecondSection from "./secondSection/index";
 
 function Main() {
   return (
     <main>
-      <ProductCard />
+      <FirstSection />
+      <SecondSection />
     </main>
   );
 }

@@ -1,0 +1,51 @@
+.productHeaderInfoContainer {
+  border-bottom: 0.1rem solid #737373;
+}
+
+.productHeaderInfo {
+  padding: 2.4rem 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.genderBox,
+.genderBoxBtn {
+  display: flex;
+  gap: 1rem;
+}
+
+.genderBox h6 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  letter-spacing: 0.2rem;
+  color: #737373;
+}
+
+.genderBox h6.active {
+  color: #23a6f0;
+}
+
+.genderBoxBtn li {
+  font-size: 3.5rem;
+}
+
+@media screen and (min-width: 1200px) {
+  .productHeaderInfoContainer {
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+  }
+
+  .productHeaderInfo {
+    padding: 0;
+    flex: 1;
+
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0rem;
+  }
+}

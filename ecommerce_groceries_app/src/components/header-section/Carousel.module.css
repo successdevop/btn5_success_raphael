@@ -1,0 +1,112 @@
+.carouselContainer {
+  background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.25)),
+    url(../../assets/images/backgroundHeroImg.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  position: relative;
+}
+
+.innerCarousel {
+  height: 63.8rem;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+
+  padding: 3.5rem;
+}
+
+.carouselBtnPrev,
+.carouselBtnNext {
+  display: inline-block;
+  font-size: 7rem;
+  color: #fff;
+
+  position: absolute;
+  top: 50%;
+}
+
+.carouselBtnPrev.prev {
+  left: 1%;
+}
+.carouselBtnNext.next {
+  right: 1%;
+}
+
+.carouselContentInfo {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  gap: 3rem;
+}
+
+.headline {
+  color: #fff;
+  font-size: 4rem;
+  line-height: 5rem;
+  letter-spacing: 0.2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.mobileText,
+.desktopText {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 3rem;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  color: #e3e3e3;
+}
+
+.desktopText {
+  display: none;
+}
+
+.carouselProductSlide {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .mobileText {
+    width: 50rem;
+  }
+}
+
+@media screen and (min-width: 912px) {
+  .mobileText {
+    display: none;
+  }
+
+  .headline {
+    font-size: 5.8rem;
+    line-height: 8rem;
+  }
+
+  .desktopText {
+    display: block;
+    width: 65rem;
+  }
+
+  .carouselProductSlide {
+    display: flex;
+    height: 1rem;
+    width: 15rem;
+    background-color: #dedede;
+
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .activeSlide {
+    background-color: #fff;
+  }
+
+  .carouselProductSlide .prevSlide,
+  .carouselProductSlide .nextSlide {
+    width: 100%;
+  }
+}
