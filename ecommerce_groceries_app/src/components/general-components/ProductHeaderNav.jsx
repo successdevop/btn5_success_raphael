@@ -2,12 +2,10 @@ import { CiCircleChevLeft, CiCircleChevRight } from "react-icons/ci";
 
 import styles from "./ProductHeaderNav.module.css";
 
-function ProductHeaderNav() {
+function ProductHeaderNav({ children }) {
   return (
     <div className={styles.productHeaderInfoContainer}>
-      <div className={styles.sectionTitle}>
-        <h3>BESTSELLER PRODUCTS</h3>
-      </div>
+      {children}
 
       <div className={styles.productHeaderInfo}>
         <ul className={styles.genderBox}>

@@ -1,6 +1,6 @@
 import styles from "./GeneralProductBanner.module.css";
 
-function GeneralProductBanner({ mainImg, otherImg, children }) {
+function GeneralProductBanner({ mainImg, otherImg, text, children }) {
   return (
     <div className={styles.productCard}>
       <div className={styles.productCardImgBox}>
@@ -11,7 +11,7 @@ function GeneralProductBanner({ mainImg, otherImg, children }) {
         />
       </div>
       <div className={styles.productCardInfo}>
-        <h5>MOST POPULAR</h5>
+        {text}
         <p>
           We focus on ergonomics and meeting you where you work. It's only a
           keystroke away.

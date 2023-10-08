@@ -9,6 +9,7 @@ import GeneralProductCardCoverImg from "../../general-components/GeneralProductC
 import { secondSectionData } from "../../../data/app";
 
 import rootsAndGrain from "../../../assets/images/rootsAndGrain.svg";
+import MainHeaderText from "../../general-components/MainHeaderText";
 
 function index() {
   return (
@@ -16,7 +17,9 @@ function index() {
       <Container className="secondSection">
         <GeneralProductCardCoverImg img={rootsAndGrain} />
         <Container className="productContainer">
-          <ProductHeaderNav />
+          <ProductHeaderNav>
+            <MainHeaderText />
+          </ProductHeaderNav>
           <Container className="secondSectionCardContainer">
             {secondSectionData.map((item) => (
               <GeneralProductCard key={item.id} {...item}>

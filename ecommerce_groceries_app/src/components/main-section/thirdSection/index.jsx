@@ -7,12 +7,17 @@ import GeneralInfoCard from "../../general-components/GeneralInfoCard";
 
 import manOnBike from "../../../assets/images/manOnBike.svg";
 import meatInPlate from "../../../assets/images/meatInPlate.svg";
+import MainHeaderText from "../../general-components/MainHeaderText";
 
 function index() {
   return (
     <Section>
       <Container className={"thirdSection"}>
-        <GeneralProductBanner mainImg={manOnBike} otherImg={meatInPlate}>
+        <GeneralProductBanner
+          mainImg={manOnBike}
+          otherImg={meatInPlate}
+          text={<MainHeaderText text="MOST POPULAR" />}
+        >
           <GeneralInfoCard
             headerText="English Department"
             headerFontSize={1.4}
