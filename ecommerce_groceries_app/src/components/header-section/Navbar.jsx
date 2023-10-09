@@ -32,13 +32,13 @@ function Navbar() {
         {/* nav icons for mobile*/}
         <div className={styles.navIconsMobile}>
           <span>
-            <AiOutlineSearch className={styles.navIconDesktop} />
+            <AiOutlineSearch className={styles.navIcon} />
           </span>
           <span>
-            <BsCart3 className={styles.navIconDesktop} />
+            <BsCart3 className={styles.navIcon} />
           </span>
           <span>
-            <BiMenuAltRight className={styles.navIconDesktop} />
+            <BiMenuAltRight className={styles.navIcon} />
           </span>
         </div>
 

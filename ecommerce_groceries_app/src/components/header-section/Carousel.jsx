@@ -1,6 +1,7 @@
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
 import styles from "./Carousel.module.css";
+import GlobalButton from "../general-components/GlobalButton";
 
 function Carousel() {
   return (
@@ -21,7 +22,7 @@ function Carousel() {
             We know how large objects will act, but things on a small scale just
             do not act that way.
           </h4>
-          <button className={styles.cta}>Start Now</button>
+          <GlobalButton text="Start Now" />
         </div>
         <div className={styles.carouselProductSlide}>
           <div className={`${styles.prevSlide} ${styles.activeSlide}`}></div>
