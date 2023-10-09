@@ -14,17 +14,22 @@ function index() {
     <Section>
       <Container
         display="grid"
-        justifyItems="center"
         paddingLeft={2}
         paddingRight={2}
         paddingBottom={5}
+        className="customStyleForFourthSection"
       >
         <GeneralProductCardCoverImg img={doughnutImg} />
-        <Container display="grid" gap={4}>
+        <Container display="grid" gap={4} className="removeMarginFromContainer">
           <ProductHeaderNav>
             <MainHeaderText />
           </ProductHeaderNav>
-          <Container display="grid" gap={4} paddingBottom={10}>
+          <Container
+            display="grid"
+            gap={4}
+            paddingBottom={10}
+            className="threeColumnGridLayout"
+          >
             {secondSectionData.map((item) => (
               <GeneralProductCard key={item.id} {...item}>
                 <GeneralInfoCard />

@@ -10,3 +10,9 @@
   line-height: 2.4rem;
   letter-spacing: 0.2rem;
 }
+
+@media screen and (min-width: 1024px) {
+  .footerBottonContent {
+    grid-template-columns: 1fr auto;
+  }
+}

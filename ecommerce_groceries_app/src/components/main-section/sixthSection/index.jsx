@@ -12,10 +12,12 @@ function index() {
       <Container
         bgColor="#FAFAFA"
         display="grid"
-        justifyItems="center"
         gap={5}
         paddingTop={5}
+        paddingLeft={3}
+        paddingRight={3}
         paddingBottom={10}
+        className="fourColumnGridLayout customStyleForSixSection"
       >
         {sixthSectionData.map((item) => (
           <GeneralProductCard margin={0} key={item.id} {...item}>

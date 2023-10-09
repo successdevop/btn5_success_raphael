@@ -29,54 +29,68 @@ body {
   font-weight: 400;
 }
 
-.footerContainer {
+.removeMarginFromContainer {
   margin: 0 !important;
 }
 
+.fourColumnGridLayoutAndAbove {
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+}
+
 @media all and (min-width: 768px) {
+  .twoColumnGridLayout,
+  .logoColumnGridLayout,
+  .customStyleForFooterSection {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media all and (min-width: 820px) {
+  .customStyleForSixSection {
+    justify-items: center;
+  }
+
+  .customStyleForFooterSection {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .logoColumnGridLayout {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 @media all and (min-width: 1200px) {
-  .productContainer {
-    padding: 0;
+  .threeColumnGridLayout {
+    grid-template-columns: repeat(3, 1fr);
   }
 
-  /* .firstSection {
-    grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
-    margin: 0 auto;
-  } */
+  .fourColumnGridLayout {
+    grid-template-columns: repeat(4, 1fr);
+  }
 
-  .secondSection,
-  .fourthSection {
-    padding: 4.8rem 2rem;
-    display: grid;
+  .logoColumnGridLayout {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .customStyleForSecondSection {
     grid-template-columns: 30rem 1fr;
-    gap: 3rem;
-    margin: 0 auto;
+    gap: 3rem !important;
+    padding-bottom: 10rem !important;
   }
 
-  .fourthSection {
+  .customStyleForFourthSection {
     grid-template-columns: 1fr 30rem;
+    gap: 3rem !important;
+    padding-bottom: 15rem !important;
   }
 
-  .fourthSection > :first-child {
+  .customStyleForFourthSection > :first-child {
     order: 1;
   }
 
-  .secondSectionCardContainer {
-    padding-top: 0rem;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-  }
-
-  .thirdSection {
-    margin: 0 auto;
-  }
-
-  .sixthSection {
-    padding: 5rem;
-    display: grid;
-    gap: 5rem;
-    grid-template-columns: repeat(4, 1fr);
+  .customStyleForFooterSection {
+    grid-template-columns: repeat(5, 1fr);
   }
 }

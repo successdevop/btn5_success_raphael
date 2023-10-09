@@ -15,6 +15,7 @@ function index() {
         alignItems="center"
         justifyItems="center"
         gap={3}
+        className={`twoColumnGridLayout threeColumnGridLayout`}
       >
         {firstSectionData.map((item) => (
           <ProductCard key={item.id} {...item} />

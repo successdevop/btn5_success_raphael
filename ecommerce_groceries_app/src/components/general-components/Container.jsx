@@ -10,7 +10,7 @@ function Container({
   alignItems = "",
   justifyItems = "",
   justifyContent = "",
-  className,
+  className = "",
   children,
 }) {
   const containerStyles = {

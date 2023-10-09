@@ -15,7 +15,11 @@ function index() {
         paddingRight={1.5}
       >
         <SectionHeaderText />
-        <Container display="grid" gap={4}>
+        <Container
+          display="grid"
+          gap={4}
+          className="twoColumnGridLayout threeColumnGridLayout"
+        >
           {eightSectionData.map((item) => (
             <ProductInfoCard key={item.id} {...item} />
           ))}

@@ -16,6 +16,7 @@ function index() {
         paddingBottom={15}
         paddingLeft={3}
         paddingRight={3}
+        className="logoColumnGridLayout"
       >
         {seventhSectionData.map((logo) => (
           <LogoImage key={logo.id} {...logo} />

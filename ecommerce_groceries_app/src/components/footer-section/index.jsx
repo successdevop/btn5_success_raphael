@@ -20,7 +20,7 @@ function index() {
         <FooterHeaderText />
         <Container
           bgColor=""
-          className="footerContainer"
+          className="removeMarginFromContainer customStyleForFooterSection"
           display="grid"
           gap={5}
         >

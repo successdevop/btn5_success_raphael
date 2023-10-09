@@ -16,17 +16,23 @@ function index() {
     <Section>
       <Container
         display="grid"
-        justifyItems="center"
+        paddingTop={2}
         paddingLeft={2}
         paddingRight={2}
-        paddingBottom={5}
+        paddingBottom={8}
+        className="customStyleForSecondSection"
       >
         <GeneralProductCardCoverImg img={rootsAndGrain} />
-        <Container display="grid" gap={4}>
+        <Container display="grid" gap={4} className="removeMarginFromContainer">
           <ProductHeaderNav>
             <MainHeaderText />
           </ProductHeaderNav>
-          <Container display="grid" gap={4} paddingBottom={10}>
+          <Container
+            display="grid"
+            gap={4}
+            paddingBottom={10}
+            className="removeMarginFromContainer threeColumnGridLayout"
+          >
             {secondSectionData.map((item) => (
               <GeneralProductCard key={item.id} {...item}>
                 <GeneralInfoCard />
