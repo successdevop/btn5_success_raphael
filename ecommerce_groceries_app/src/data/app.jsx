@@ -18,7 +18,7 @@ import bgImgCarBuilding from "../assets/featuredImg/bgImgCarBuilding.svg";
 import bgImgUmbrella from "../assets/featuredImg/bgImgUmbrella.svg";
 
 import { BsTelephone } from "react-icons/bs";
-import { GrLocation } from "react-icons/gr";
+import { CiLocationOn } from "react-icons/ci";
 import { FiSend } from "react-icons/fi";
 
 export const firstSectionData = [
@@ -162,7 +162,7 @@ export const footerData = [
     item1: "Get In Touch",
     img2: <BsTelephone />,
     item2: "IOS & Android",
-    img3: <GrLocation />,
+    img3: <CiLocationOn />,
     item3: "Watch a Demo",
     img4: <FiSend />,
     item4: "Customers",

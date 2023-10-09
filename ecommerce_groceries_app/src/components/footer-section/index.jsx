@@ -12,19 +12,23 @@ function index() {
         bgColor="#252B42"
         display="grid"
         gap={5}
-        justifyItems="center"
-        alignItems="center"
         paddingTop={5}
-        paddingBottom={2}
+        paddingLeft={6}
+        paddingRight={5}
+        paddingBottom={5}
       >
-        <Container bgColor="" display="grid" gap={7}>
-          <FooterHeaderText />
-          <Container bgColor="" display="grid" gap={5} justifyItems="start">
-            {footerData.map((items) => (
-              <FooterListItem key={items.id} {...items} />
-            ))}
-          </Container>
+        <FooterHeaderText />
+        <Container
+          bgColor=""
+          className="footerContainer"
+          display="grid"
+          gap={5}
+        >
+          {footerData.map((items) => (
+            <FooterListItem key={items.id} {...items} />
+          ))}
         </Container>
+
         <FooterBottonContent />
       </Container>
     </Section>

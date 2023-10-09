@@ -3,7 +3,7 @@ import SocialMediaIcons from "./SocialMediaIcons";
 
 function FooterBottonContent() {
   return (
-    <div>
+    <div className={styles.footerBottonContent}>
       <h6 className={styles.text}>
         Made With Love By Finland All Right Reserved{" "}
       </h6>

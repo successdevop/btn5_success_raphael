@@ -10,10 +10,20 @@
   font-weight: 700;
   line-height: 2.4rem;
   letter-spacing: 0.2rem;
+
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .footerListItem li:first-child {
   font-size: 1.6rem;
   letter-spacing: 0.1rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.6rem;
+}
+
+.footerListItem li:nth-child(2) > :first-child,
+.footerListItem li:nth-child(3) > :first-child,
+.footerListItem li:nth-child(4) > :first-child {
+  color: #8ec2f2;
 }
