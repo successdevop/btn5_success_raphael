@@ -1,0 +1,19 @@
+.footerListItem {
+  display: grid;
+  gap: 1.2rem;
+}
+
+.footerListItem li {
+  color: #fff;
+  font-family: inherit;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  letter-spacing: 0.2rem;
+}
+
+.footerListItem li:first-child {
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 0.5rem;
+}

@@ -9,7 +9,14 @@ function index() {
   return (
     <Section bgColor="#FAFAFA">
       <MainHeaderText top={5} />
-      <Container bgColor="#FAFAFA" className="sixthSection">
+      <Container
+        bgColor="#FAFAFA"
+        display="grid"
+        justifyItems="center"
+        gap={5}
+        paddingTop={5}
+        paddingBottom={10}
+      >
         {sixthSectionData.map((item) => (
           <GeneralProductCard margin={0} key={item.id} {...item}>
             <GeneralInfoCard />

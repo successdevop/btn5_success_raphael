@@ -12,20 +12,22 @@ import MainHeaderText from "../../general-components/MainHeaderText";
 function index() {
   return (
     <Section>
-      <Container className={"thirdSection"}>
-        <GeneralProductBanner
-          mainImg={manOnBike}
-          otherImg={meatInPlate}
-          text={<MainHeaderText text="MOST POPULAR" />}
-        >
-          <GeneralInfoCard
-            headerText="English Department"
-            headerFontSize={1.4}
-            mainText="&#10515; 15 Sales"
-            textFontSize={1.3}
-            alignItems="center"
-          />
-        </GeneralProductBanner>
+      <Container paddingBottom={6}>
+        <Container paddingBottom={3}>
+          <GeneralProductBanner
+            mainImg={manOnBike}
+            otherImg={meatInPlate}
+            text={<MainHeaderText text="MOST POPULAR" />}
+          >
+            <GeneralInfoCard
+              headerText="English Department"
+              headerFontSize={1.4}
+              mainText="&#10515; 15 Sales"
+              textFontSize={1.3}
+              alignItems="center"
+            />
+          </GeneralProductBanner>
+        </Container>
 
         <ProductCardFooter />
       </Container>

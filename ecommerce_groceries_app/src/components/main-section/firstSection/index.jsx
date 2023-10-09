@@ -8,10 +8,13 @@ function index() {
   return (
     <Section bgColor="#FAFAFA">
       <Container
-        paddingTopBottom={4}
-        paddingLeftRight={2}
         bgColor="#FAFAFA"
-        className="firstSection"
+        paddingTop={6}
+        paddingBottom={7}
+        display="grid"
+        alignItems="center"
+        justifyItems="center"
+        gap={3}
       >
         {firstSectionData.map((item) => (
           <ProductCard key={item.id} {...item} />

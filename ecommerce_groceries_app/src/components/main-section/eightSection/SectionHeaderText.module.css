@@ -1,0 +1,21 @@
+.sectionHeaderText {
+  margin-bottom: 8rem;
+}
+
+.sectionHeaderText h6 {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  letter-spacing: 0.02rem;
+  color: #23a6f0;
+}
+
+.sectionHeaderText h2 {
+  color: #252b42;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 5rem;
+  letter-spacing: 0.02rem;
+}

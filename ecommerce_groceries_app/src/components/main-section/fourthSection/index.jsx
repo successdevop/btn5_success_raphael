@@ -12,13 +12,19 @@ import MainHeaderText from "../../general-components/MainHeaderText";
 function index() {
   return (
     <Section>
-      <Container className="fourthSection">
+      <Container
+        display="grid"
+        justifyItems="center"
+        paddingLeft={2}
+        paddingRight={2}
+        paddingBottom={5}
+      >
         <GeneralProductCardCoverImg img={doughnutImg} />
-        <Container className="productContainer">
+        <Container display="grid" gap={4}>
           <ProductHeaderNav>
             <MainHeaderText />
           </ProductHeaderNav>
-          <Container className="secondSectionCardContainer">
+          <Container display="grid" gap={4} paddingBottom={10}>
             {secondSectionData.map((item) => (
               <GeneralProductCard key={item.id} {...item}>
                 <GeneralInfoCard />

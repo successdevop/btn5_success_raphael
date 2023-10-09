@@ -1,0 +1,15 @@
+.textBox h3 {
+  /* text-align: center; */
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 3.2rem;
+  letter-spacing: 0.1rem;
+}
+
+.textBox p {
+  color: #fff;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  letter-spacing: 0.02rem;
+}

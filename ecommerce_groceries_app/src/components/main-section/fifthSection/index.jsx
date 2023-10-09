@@ -5,14 +5,16 @@ import Section from "../../general-components/Section";
 
 import aGirlWithDoughtnut from "../../../assets/images/aGirlWithDoughtnut.svg";
 import caramelCashew from "../../../assets/images/caramelCashew.svg";
+import MainHeaderText from "../../general-components/MainHeaderText";
 
 function index() {
   return (
     <Section>
-      <Container className={"thirdSection"}>
+      <Container paddingBottom={3}>
         <GeneralProductBanner
           mainImg={aGirlWithDoughtnut}
           otherImg={caramelCashew}
+          text={<MainHeaderText text="MOST POPULAR" />}
         >
           <GeneralInfoCard
             headerText="English Department"

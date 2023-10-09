@@ -5,6 +5,7 @@ import FourthSection from "./fourthSection/index";
 import FifthSection from "./fifthSection/index";
 import SixthSection from "./sixthSection/index";
 import SeventhSection from "./seventhSection/index";
+import EightSection from "./eightSection/index";
 
 function Main() {
   return (
@@ -16,6 +17,7 @@ function Main() {
       <FifthSection />
       <SixthSection />
       <SeventhSection />
+      <EightSection />
     </main>
   );
 }

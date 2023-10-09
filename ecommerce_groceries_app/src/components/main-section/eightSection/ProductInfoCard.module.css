@@ -1,0 +1,109 @@
+.productInfoCard {
+  position: relative;
+  box-shadow: 0.5rem 1rem 5rem rgb(0, 0, 0, 0.1);
+}
+
+.productInfoBox {
+  padding: 2.5rem 2.5rem 3.5rem;
+  display: grid;
+  gap: 2rem;
+}
+
+.productControlBtnBox {
+  display: flex;
+  gap: 3rem;
+}
+
+.productBtn {
+  color: #737373;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.6rem;
+  letter-spacing: 0.02rem;
+  background-color: transparent;
+}
+
+.productBtn:first-child {
+  color: #8ec2f2;
+}
+
+.textHeader {
+  color: #252b42;
+  font-size: 2rem;
+  line-height: 3rem;
+  letter-spacing: 0.02rem;
+}
+
+.text {
+  color: #737373;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  letter-spacing: 0.02rem;
+}
+
+.dateAndComments {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dateAndComments p {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.dateAndComments p span {
+  color: #737373;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  letter-spacing: 0.02rem;
+}
+
+.iconClock,
+.iconGraph,
+.iconArrow {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+.iconArrow,
+.iconClock {
+  color: #23a6f0;
+}
+
+.iconGraph {
+  color: #23856d;
+}
+
+.learnMore {
+  color: #737373;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  letter-spacing: 0.2rem;
+
+  display: flex;
+  align-items: center;
+}
+
+.tag {
+  border-radius: 0.3rem;
+  background: #e74040;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  text-align: center;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 2.4rem;
+  letter-spacing: 0.02rem;
+  padding: 0.3rem 0.7rem;
+
+  position: absolute;
+  z-index: 2;
+  top: 2rem;
+  left: 2rem;
+}
