@@ -1,7 +1,7 @@
 import Container from "../general-components/Container";
 import Section from "../general-components/Section";
 import FooterHeaderText from "./FooterHeaderText";
-import { footerData } from "../../data/app";
+import { footerData } from "../../data/appDataFile";
 import FooterListItem from "./FooterListItem";
 import FooterBottonContent from "./FooterBottomContent";
 

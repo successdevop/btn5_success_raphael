@@ -6,19 +6,25 @@ import FifthSection from "./fifthSection/index";
 import SixthSection from "./sixthSection/index";
 import SeventhSection from "./seventhSection/index";
 import EightSection from "./eightSection/index";
+import Header from "../header-section/Header";
+import Footer from "../footer-section/Footer";
 
 function Main() {
   return (
-    <main>
-      <FirstSection />
-      <SecondSection />
-      <ThirdSection />
-      <FourthSection />
-      <FifthSection />
-      <SixthSection />
-      <SeventhSection />
-      <EightSection />
-    </main>
+    <>
+      <Header />
+      <main>
+        <FirstSection />
+        <SecondSection />
+        <ThirdSection />
+        <FourthSection />
+        <FifthSection />
+        <SixthSection />
+        <SeventhSection />
+        <EightSection />
+      </main>
+      <Footer />
+    </>
   );
 }
 

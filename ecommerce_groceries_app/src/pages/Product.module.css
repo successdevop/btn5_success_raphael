@@ -1,0 +1,49 @@
+.firstSectionInnerBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.firstHeaderSection h3 {
+  color: #252b42;
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 3.2rem;
+  letter-spacing: 0.01rem;
+}
+
+.firstHeaderSection a:link,
+.firstHeaderSection a:visited,
+.firstHeaderSection h6,
+.secondSectionHeaderBox h6 {
+  color: #252b42;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  letter-spacing: 0.02rem;
+}
+
+.firstSectionIcon {
+  width: 0.7rem;
+  height: 1.2rem;
+}
+
+.firstHeaderSection h6 {
+  color: var(--second-text-color, #737373);
+}
+
+.secondSectionHeaderBox h6 {
+  color: #737373;
+}
+
+.secondSectionControlBtnBox {
+  border-radius: 5px;
+  border: 1px solid #737373;
+}
+
+.secondSectionControlBtnBox button {
+  padding: 2.5rem 2rem;
+}

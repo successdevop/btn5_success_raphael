@@ -2,7 +2,7 @@ import Container from "../../general-components/Container";
 import Section from "../../general-components/Section";
 import ProductCard from "./ProductCard";
 
-import { firstSectionData } from "../../../data/app";
+import { firstSectionData } from "../../../data/appDataFile";
 
 function index() {
   return (

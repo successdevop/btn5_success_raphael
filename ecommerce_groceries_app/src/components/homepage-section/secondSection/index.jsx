@@ -1,12 +1,14 @@
-import { secondSectionData } from "../../../data/app";
+import Section from "../../general-components/Section";
 import Container from "../../general-components/Container";
+
+import ProductHeaderNav from "../../general-components/ProductHeaderNav";
 import GeneralInfoCard from "../../general-components/GeneralInfoCard";
 import GeneralProductCard from "../../general-components/GeneralProductCard";
-import ProductHeaderNav from "../../general-components/ProductHeaderNav";
-import Section from "../../general-components/Section";
-
 import GeneralProductCardCoverImg from "../../general-components/GeneralProductCardCoverImg";
-import doughnutImg from "../../../assets/images/doughnutImg.svg";
+
+import { secondSectionData } from "../../../data/appDataFile";
+
+import rootsAndGrain from "../../../assets/images/rootsAndGrain.svg";
 import MainHeaderText from "../../general-components/MainHeaderText";
 
 function index() {
@@ -14,12 +16,13 @@ function index() {
     <Section>
       <Container
         display="grid"
+        paddingTop={2}
         paddingLeft={2}
         paddingRight={2}
-        paddingBottom={5}
-        className="customStyleForFourthSection"
+        paddingBottom={8}
+        className="customStyleForSecondSection"
       >
-        <GeneralProductCardCoverImg img={doughnutImg} />
+        <GeneralProductCardCoverImg img={rootsAndGrain} />
         <Container display="grid" gap={4} className="removeMarginFromContainer">
           <ProductHeaderNav>
             <MainHeaderText />
@@ -28,7 +31,7 @@ function index() {
             display="grid"
             gap={4}
             paddingBottom={10}
-            className="threeColumnGridLayout"
+            className="removeMarginFromContainer threeColumnGridLayout"
           >
             {secondSectionData.map((item) => (
               <GeneralProductCard key={item.id} {...item}>

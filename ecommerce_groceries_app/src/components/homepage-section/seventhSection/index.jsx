@@ -1,7 +1,7 @@
 import Container from "../../general-components/Container";
 import Section from "../../general-components/Section";
 
-import { seventhSectionData } from "../../../data/app";
+import { seventhSectionData } from "../../../data/appDataFile";
 import LogoImage from "../../general-components/LogoImage";
 
 function index() {

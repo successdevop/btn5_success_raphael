@@ -3,7 +3,7 @@ import Section from "../../general-components/Section";
 import ProductInfoCard from "./ProductInfoCard";
 import SectionHeaderText from "./SectionHeaderText";
 
-import { eightSectionData } from "../../../data/app";
+import { eightSectionData } from "../../../data/appDataFile";
 
 function index() {
   return (

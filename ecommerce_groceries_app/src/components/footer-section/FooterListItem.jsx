@@ -9,23 +9,17 @@ function FooterListItem({
   img2,
   img3,
   img4,
+  items,
 }) {
   return (
     <ul className={styles.footerListItem}>
       <li>{item1}</li>
-      <li>
-        {img2}
-        {item2}
-      </li>
-      <li>
-        {img3}
-        {item3}
-      </li>
-      <li>
-        {img4}
-        {item4}
-      </li>
-      <li>{item5}</li>
+      {items?.map((item, i) => (
+        <li key={i}>
+          {item.img2 && <item.img2 className={styles.icon} />}
+          {item.item2}
+        </li>
+      ))}
     </ul>
   );
 }

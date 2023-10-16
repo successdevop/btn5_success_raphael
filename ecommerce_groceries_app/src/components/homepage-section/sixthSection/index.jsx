@@ -1,4 +1,4 @@
-import { sixthSectionData } from "../../../data/app";
+import { sixthSectionData } from "../../../data/appDataFile";
 import Container from "../../general-components/Container";
 import GeneralInfoCard from "../../general-components/GeneralInfoCard";
 import GeneralProductCard from "../../general-components/GeneralProductCard";
