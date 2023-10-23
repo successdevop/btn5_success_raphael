@@ -1,0 +1,253 @@
+/*******************/
+/* FIRST SECTION */
+/*******************/
+.firstSectionInnerBox {
+  display: grid;
+  gap: 3rem;
+  padding-bottom: 2.4rem;
+}
+
+.carouselContainer {
+  display: grid;
+  gap: 2rem;
+}
+
+.mainImg {
+  position: relative;
+}
+
+.otherImg {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.otherImg img {
+  width: 10rem;
+  height: 7.5rem;
+  flex-shrink: 0;
+}
+
+.prevBtn,
+.nextBtn {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.nextBtn {
+  right: 0;
+}
+
+.carouselContentInfoBox {
+  padding: 1.1rem 2rem 0rem;
+}
+
+.carouselContentInfoBox h4 {
+  color: #252b42;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 3rem;
+  letter-spacing: 0.02rem;
+  margin-bottom: 0.7rem;
+}
+
+.starRatingBox {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.starRatingBox h6 {
+  color: #737373;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  letter-spacing: 0.02rem;
+}
+
+.starIcon {
+  width: 2.2rem;
+}
+
+.price {
+  color: #252b42;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 3.2rem;
+  letter-spacing: 0.01rem;
+}
+
+.availableBoxInfo {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 3.2rem;
+}
+
+.availableBoxInfo h6 {
+  color: #737373;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.4rem;
+  letter-spacing: 0.02rem;
+}
+
+.availableBoxInfo h6:last-child {
+  color: #23a6f0;
+}
+
+.carouselContentInfoBox p {
+  color: #858585;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  letter-spacing: 0.02rem;
+}
+
+.horizontalLine {
+  margin-top: 1.6rem;
+}
+
+.colorsBox {
+  margin: 2rem 0 4rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.color {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+}
+
+.blueColor {
+  background-color: #23a6f0;
+}
+
+.greenColor {
+  background-color: #2dc071;
+}
+
+.orangeColor {
+  background-color: #e77c40;
+}
+
+.blackColor {
+  background-color: #252b42;
+}
+
+.actionBoxInfo {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.iconsBox {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.iconsBox span {
+  display: inline-block;
+  background-color: #fff;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*******************/
+/* SECOND SECTION */
+/*******************/
+.secondSectionNav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 5rem;
+}
+
+.link {
+  color: #737373;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  letter-spacing: 0.02rem;
+  font-weight: 700;
+}
+
+.secondSectionNav li:first-child .link {
+  font-weight: 600;
+  text-decoration-line: underline;
+}
+
+.reviews {
+  color: #23856d;
+}
+
+.secondSecondImgBox {
+  margin-bottom: 5rem;
+  box-shadow: 0.8rem 1rem 0 rgba(196, 196, 196, 0.2);
+  border-radius: 0.5624rem;
+}
+
+.cardItem1 h5,
+.cardItem2 h5 {
+  color: #252b42;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 3.2rem;
+  letter-spacing: 0.01rem;
+  margin-bottom: 1.5rem;
+}
+
+.cardItem1 h5,
+.cardItem2 ul {
+  margin-top: 4rem;
+}
+
+.cardItemText span {
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+.cardItem1 p,
+.cardItem2 li {
+  color: #737373;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  letter-spacing: 0.02rem;
+}
+
+.cardItem2 {
+  display: grid;
+  gap: 3rem;
+}
+
+.cardItem2 ul {
+  display: grid;
+  gap: 1.2rem;
+}
+
+.cardItem2 li {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+}
+
+/*******************/
+/* THIRD SECTION */
+/*******************/
+.thirdSection hr {
+  margin-bottom: 2rem;
+}
+
+.thirdSectionProductCardContainer > div {
+  box-shadow: 0.5rem 1.5rem 3rem rgb(0, 0, 0, 0.05);
+}

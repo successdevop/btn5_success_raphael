@@ -1,0 +1,122 @@
+.navbarContainer2 {
+  height: 70.9rem;
+  padding: 3.4rem;
+  background-color: #fff;
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.navIcon2 {
+  height: 2.5rem;
+  width: 2.5rem;
+  color: #252b42;
+}
+
+.navbarNavMobile2 {
+  display: grid;
+  gap: 2rem;
+
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.navbarNavDesktop2 {
+  display: grid;
+  justify-items: center;
+  gap: 2rem;
+}
+
+.navbarNavDesktop2 a:link,
+.navbarNavDesktop2 a:visited,
+.navIconsDesktop2 {
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 4.5rem;
+  letter-spacing: 0.02rem;
+  color: #737373;
+}
+
+.navbarNavDesktop2 li:first-child a:link,
+.navbarNavDesktop2 li:first-child a:visited {
+  color: #252b42;
+}
+
+.navbarNavDesktop2 li:nth-child(2) a:link,
+.navbarNavDesktop2 li:nth-child(2) a:visited {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navIconsDesktop2 {
+  font-size: 2rem;
+  text-align: center;
+  color: #23a6f0;
+}
+
+/* FOR MINI-TABLETS, TABLET AND DESKTOPS */
+@media screen and (min-width: 1024px) {
+  .navIconsMobile2 {
+    display: none;
+  }
+
+  .navbarContainer2 {
+    height: 9.1rem;
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 3.4rem;
+    background-color: #fff;
+  }
+
+  .navbarNavMobile2 {
+    display: flex;
+    gap: 2.5rem;
+
+    position: static;
+    top: 0%;
+    left: 0%;
+    transform: translate(-0%, -0%);
+  }
+
+  .navbarNavDesktop2 {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+  }
+
+  .navbarNavDesktop2 a:link,
+  .navbarNavDesktop2 a:visited,
+  .navIconsDesktop2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+    letter-spacing: 0.2rem;
+    color: #737373;
+  }
+
+  .navIconsDesktop2 {
+    color: #23a6f0;
+
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .navbarContainer2 {
+    gap: 20rem;
+  }
+
+  .desktopContainer2 {
+    flex: 1;
+  }
+
+  .navbarNavDesktop2 {
+    gap: 1.5rem;
+  }
+}

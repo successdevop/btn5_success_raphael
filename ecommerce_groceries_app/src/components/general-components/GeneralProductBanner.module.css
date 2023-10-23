@@ -24,34 +24,6 @@
   letter-spacing: 0.2rem;
 }
 
-.colorBox {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-}
-
-.color {
-  height: 1rem;
-  width: 1rem;
-  border-radius: 100%;
-}
-
-.color-1 {
-  background-color: #23a6f0;
-}
-
-.color-2 {
-  background-color: #23856d;
-}
-
-.color-3 {
-  background-color: #e77c40;
-}
-
-.color-4 {
-  background-color: #252b42;
-}
-
 @media screen and (min-width: 912px) {
   .productCard {
     display: grid;
@@ -61,10 +33,6 @@
 
   .productCardImgBox {
     height: 78.4rem;
-  }
-
-  .colorBox {
-    display: none;
   }
 }
 

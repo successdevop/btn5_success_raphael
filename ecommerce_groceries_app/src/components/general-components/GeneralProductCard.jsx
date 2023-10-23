@@ -1,6 +1,6 @@
 import styles from "./GeneralProductCard.module.css";
 
-function GeneralProductCard({ img, margin, children }) {
+function GeneralProductCard({ img, margin, childElement1, children }) {
   return (
     <div className={styles.productCard}>
       <div className={styles.productImgBox}>
@@ -11,7 +11,10 @@ function GeneralProductCard({ img, margin, children }) {
           style={{ margin: `${margin}rem` }}
         />
       </div>
-      {children}
+      <div>
+        {children}
+        {childElement1}
+      </div>
     </div>
   );
 }

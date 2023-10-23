@@ -1,10 +1,10 @@
 function MainHeaderText({
   textAlign = "center",
   text = "BESTSELLER PRODUCTS",
-  top = 0,
-  right = 0,
-  bottom = 0,
-  left = 0,
+  paddingTop = 0,
+  paddingRight = 0,
+  paddingBottom = 0,
+  paddingLeft = 0,
 }) {
   const headerStyle = {
     textAlign: textAlign,
@@ -12,7 +12,7 @@ function MainHeaderText({
     fontWeight: 700,
     lineHeight: `3rem`,
     letterSpacing: `.1rem`,
-    padding: `${top}rem ${right}rem ${bottom}rem ${left}rem`,
+    padding: `${paddingTop}rem ${paddingRight}rem ${paddingBottom}rem ${paddingLeft}rem`,
   };
 
   return (

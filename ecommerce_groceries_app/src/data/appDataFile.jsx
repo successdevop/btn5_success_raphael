@@ -31,6 +31,19 @@ import productImg1 from "../assets/productPageImages/productImg1.svg";
 import productImg2 from "../assets/productPageImages/productImg2.svg";
 import productImg3 from "../assets/productPageImages/productImg3.svg";
 import productImg4 from "../assets/productPageImages/productImg4.svg";
+import productImg5 from "../assets/productPageImages/productImg5.svg";
+import productImg6 from "../assets/productPageImages/productImg6.svg";
+import productImg7 from "../assets/productPageImages/productImg7.svg";
+import productImg8 from "../assets/productPageImages/productImg8.svg";
+import productImg9 from "../assets/productPageImages/productImg9.svg";
+import productImg10 from "../assets/productPageImages/productImg10.svg";
+import productImg11 from "../assets/productPageImages/productImg11.svg";
+import productImg12 from "../assets/productPageImages/productImg12.svg";
+
+import product2Image4 from "../assets/productPage2Images/product2Image4.svg";
+import product2Image5 from "../assets/productPage2Images/product2Image5.svg";
+import product2Image6 from "../assets/productPage2Images/product2Image6.svg";
+import product2Image7 from "../assets/productPage2Images/product2Image7.svg";
 
 export const firstSectionData = [
   {
@@ -214,7 +227,22 @@ export const productPageHeaderImages = [
 
 export const productImages = [
   { id: 1, img: productImg1 },
-  { id: 1, img: productImg3 },
-  { id: 1, img: productImg2 },
-  { id: 1, img: productImg4 },
+  { id: 2, img: productImg2 },
+  { id: 3, img: productImg3 },
+  { id: 4, img: productImg4 },
+  { id: 5, img: productImg5 },
+  { id: 6, img: productImg6 },
+  { id: 7, img: productImg7 },
+  { id: 8, img: productImg8 },
+  { id: 9, img: productImg9 },
+  { id: 10, img: productImg10 },
+  { id: 11, img: productImg11 },
+  { id: 12, img: productImg12 },
+];
+
+export const productPage2Images = [
+  { id: 1, img: product2Image4 },
+  { id: 2, img: productImg5 },
+  { id: 3, img: productImg6 },
+  { id: 4, img: productImg7 },
 ];

@@ -8,7 +8,7 @@ import Section from "../../general-components/Section";
 function index() {
   return (
     <Section bgColor="#FAFAFA">
-      <MainHeaderText top={5} />
+      <MainHeaderText paddingTop={5} />
       <Container
         bgColor="#FAFAFA"
         display="grid"

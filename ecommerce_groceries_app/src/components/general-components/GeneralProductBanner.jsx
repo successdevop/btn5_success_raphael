@@ -1,6 +1,12 @@
 import styles from "./GeneralProductBanner.module.css";
 
-function GeneralProductBanner({ mainImg, otherImg, text, children }) {
+function GeneralProductBanner({
+  mainImg,
+  otherImg,
+  childElement1,
+  childElement2,
+  children,
+}) {
   return (
     <div className={styles.productCard}>
       <div className={styles.productCardImgBox}>
@@ -11,7 +17,7 @@ function GeneralProductBanner({ mainImg, otherImg, text, children }) {
         />
       </div>
       <div className={styles.productCardInfo}>
-        {text}
+        {childElement1}
         <p>
           We focus on ergonomics and meeting you where you work. It's only a
           keystroke away.
@@ -20,12 +26,7 @@ function GeneralProductBanner({ mainImg, otherImg, text, children }) {
           <img src={otherImg} alt="meat in plate" />
         </div>
         {children}
-        <div className={styles.colorBox}>
-          <div className={`${styles.color} ${styles["color-1"]}`}></div>
-          <div className={`${styles.color} ${styles["color-2"]}`}></div>
-          <div className={`${styles.color} ${styles["color-3"]}`}></div>
-          <div className={`${styles.color} ${styles["color-4"]}`}></div>
-        </div>
+        {childElement2}
       </div>
     </div>
   );

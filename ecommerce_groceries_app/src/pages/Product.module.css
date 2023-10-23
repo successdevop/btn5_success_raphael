@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  gap: 1.2rem;
 }
 
 .firstHeaderSection h3 {
@@ -17,7 +17,8 @@
 .firstHeaderSection a:link,
 .firstHeaderSection a:visited,
 .firstHeaderSection h6,
-.secondSectionHeaderBox h6 {
+.secondSectionHeaderBox h6,
+.secondSectionControlBtnBox button {
   color: #252b42;
   text-align: center;
   font-size: 1.4rem;
@@ -35,15 +36,118 @@
   color: var(--second-text-color, #737373);
 }
 
+.secondSectionHeaderBox {
+  display: grid;
+  gap: 2rem;
+}
+
 .secondSectionHeaderBox h6 {
   color: #737373;
 }
 
+.secondSectionViewBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.secondSectionViewBox button {
+  border-radius: 0.5rem;
+  padding: 0.7rem 1rem;
+  border: 1px solid #ececec;
+  background: transparent;
+}
+
+.secondSectionSelectBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.secondSectionSelectBox select {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 2.2rem;
+  letter-spacing: 0.2rem;
+  padding: 0.6rem 0.9rem;
+
+  border-radius: 0.5rem;
+  border: 1px solid #ddd;
+  background: #f9f9f9;
+  color: #737373;
+}
+
+.secondSection aside {
+  text-align: center;
+  margin-top: 3rem;
+}
+
 .secondSectionControlBtnBox {
-  border-radius: 5px;
-  border: 1px solid #737373;
+  width: 31.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 0.6728rem;
+  border: 1.346px solid #bdbdbd;
+  background: #fff;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
 }
 
 .secondSectionControlBtnBox button {
+  color: #23a6f0;
+  display: flex;
   padding: 2.5rem 2rem;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  overflow: hidden;
+}
+
+.secondSectionControlBtnBox button:first-child,
+.secondSectionControlBtnBox button:last-child {
+  padding: 2.5rem;
+}
+
+.secondSectionControlBtnBox button:first-child {
+  color: #bdbdbd;
+  background-color: #f6f6f6;
+}
+
+@media screen and (min-width: 820px) {
+  .secondSectionProductCardContainer {
+    padding: 0 4rem 5rem !important;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .firstHeaderSection {
+    display: flex !important;
+    justify-content: space-between;
+  }
+
+  .firstSectionProductCardContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .secondSectionHeaderBox {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .firstSectionProductCardContainer {
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  }
+
+  .secondSectionProductCardContainer {
+    padding: 0 1rem 5rem !important;
+    grid-template-columns: repeat(4, 1fr);
+  }
 }

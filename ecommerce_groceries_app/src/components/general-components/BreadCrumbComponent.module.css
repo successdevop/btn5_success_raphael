@@ -1,0 +1,42 @@
+.breadCrumbComponentInnerBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.breadCrumbComponent h3 {
+  color: #252b42;
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 3.2rem;
+  letter-spacing: 0.01rem;
+}
+
+.breadCrumbComponent a:link,
+.breadCrumbComponent a:visited,
+.breadCrumbComponent h6 {
+  color: #252b42;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  letter-spacing: 0.02rem;
+}
+
+.breadCrumbComponentIcon {
+  width: 0.7rem;
+  height: 1.2rem;
+}
+
+.breadCrumbComponent h6 {
+  color: var(--second-text-color, #737373);
+}
+
+@media screen and (min-width: 1024px) {
+  .breadCrumbComponent {
+    display: flex !important;
+    justify-content: space-between;
+  }
+}

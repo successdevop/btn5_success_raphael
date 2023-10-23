@@ -1,13 +1,15 @@
 import Footer from "../components/footer-section/Footer";
-import Header from "../components/header-section/Header";
-import Product from "./Product";
+import NavbarTwo from "../components/header-section/NavbarTwo";
+// import Product from "./ProductListOne";
 import styles from "./ProductListPage.module.css";
+import ProductListTwo from "./ProductListTwo";
 
 function ProductListPage() {
   return (
     <div className={styles.productListPage}>
-      <Header />
-      <Product />
+      <NavbarTwo />
+      {/* <Product /> */}
+      <ProductListTwo />
       <Footer />
     </div>
   );

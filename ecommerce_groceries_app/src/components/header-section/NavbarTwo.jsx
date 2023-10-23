@@ -1,59 +1,37 @@
 import { NavLink } from "react-router-dom";
-import { AiOutlineSearch, AiOutlineHeart } from "react-icons/ai";
-import { BsCart3, BsChevronDown, BsCart } from "react-icons/bs";
+import { AiOutlineHeart } from "react-icons/ai";
+import { BsChevronDown, BsCart } from "react-icons/bs";
 import { BiMenuAltRight, BiSearch } from "react-icons/bi";
 import { FaRegUser } from "react-icons/fa";
 
-import styles from "./Navbar.module.css";
+import styles from "./NavbarTwo.module.css";
 import AppBrandLogo from "./AppBrandLogo";
 
-function Navbar() {
+function NavbarTwo() {
   return (
     <nav className={styles.navbar}>
-      <div className={styles.navbarContainer}>
+      <div className={styles.navbarContainer2}>
         {/* nav brand */}
         <AppBrandLogo />
-        {/* nav links for mobile */}
-        <ul className={styles.navbarNavMobile}>
-          <li>
-            <NavLink to="">Home</NavLink>
-          </li>
-          <li>
-            <NavLink to="">Product</NavLink>
-          </li>
-          <li>
-            <NavLink to="">Pricing</NavLink>
-          </li>
-          <li>
-            <NavLink to="">Contact</NavLink>
-          </li>
-        </ul>
+
         {/* nav icons for mobile*/}
-        <div className={styles.navIconsMobile}>
+        <div className={styles.navIconsMobile2}>
           <span>
-            <AiOutlineSearch className={styles.navIcon} />
-          </span>
-          <span>
-            <BsCart3 className={styles.navIcon} />
-          </span>
-          <span>
-            <BiMenuAltRight className={styles.navIcon} />
+            <BiMenuAltRight className={styles.navIcon2} />
           </span>
         </div>
 
-        {/* DESKTOP DESIGN */}
-        <div className={styles.desktopContainer}>
+        {/* nav links for mobile */}
+        <div className={styles.navbarNavMobile2}>
           {/* nav links for Desktop */}
-          <ul className={styles.navbarNavDesktop}>
+          <ul className={styles.navbarNavDesktop2}>
             <li>
               <NavLink to="">Home</NavLink>
             </li>
             <li>
               <NavLink to="">
                 Shop
-                <span>
-                  <BsChevronDown />
-                </span>
+                <BsChevronDown />
               </NavLink>
             </li>
             <li>
@@ -69,8 +47,9 @@ function Navbar() {
               <NavLink to="">Pages</NavLink>
             </li>
           </ul>
+
           {/* nav icons for Desktop */}
-          <ul className={styles.navIconsDesktop}>
+          <ul className={styles.navIconsDesktop2}>
             <li>
               <FaRegUser /> Login/Register
             </li>
@@ -90,4 +69,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default NavbarTwo;

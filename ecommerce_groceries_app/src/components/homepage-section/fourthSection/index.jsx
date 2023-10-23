@@ -19,7 +19,11 @@ function index() {
         paddingBottom={5}
         className="customStyleForFourthSection"
       >
-        <GeneralProductCardCoverImg img={doughnutImg} />
+        <GeneralProductCardCoverImg
+          positionTop={10}
+          positionLeft={10}
+          img={doughnutImg}
+        />
         <Container display="grid" gap={4} className="removeMarginFromContainer">
           <ProductHeaderNav>
             <MainHeaderText />

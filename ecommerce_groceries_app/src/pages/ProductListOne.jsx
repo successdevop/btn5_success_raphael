@@ -1,8 +1,7 @@
-import { Link } from "react-router-dom";
 import Container from "../components/general-components/Container";
 import Section from "../components/general-components/Section";
 import styles from "./Product.module.css";
-import { IconBars, IconRightPointer } from "../UtilityIcons/IconFile";
+import { IconBars } from "../UtilityIcons/IconFile";
 import {
   productImages,
   productPageHeaderImages,
@@ -14,6 +13,8 @@ import GlobalButton from "../components/general-components/GlobalButton";
 import GeneralProductCard from "../components/general-components/GeneralProductCard";
 import GeneralInfoCard from "../components/general-components/GeneralInfoCard";
 import LogoImage from "../components/general-components/LogoImage";
+import GlobalColorsBox from "../components/general-components/GlobalColorsBox";
+import BreadCrumbComponent from "../components/general-components/BreadCrumbComponent";
 
 function Product() {
   return (
@@ -26,22 +27,30 @@ function Product() {
           paddingBottom={5}
           className={styles.firstSection}
         >
+          <BreadCrumbComponent />
           <Container
             bgColor="#FAFAFA"
             display="grid"
-            gap={3}
-            className={styles.firstHeaderSection}
+            gap={2}
+            paddingLeft={4}
+            paddingRight={4}
+            className={styles.firstSectionProductCardContainer}
           >
-            <h3>Shop</h3>
-            <div className={styles.firstSectionInnerBox}>
-              <Link to="">Home</Link>
-              <IconRightPointer className={styles.firstSectionIcon} />
-              <h6>Shop</h6>
-            </div>
-          </Container>
-          <Container bgColor="#FAFAFA">
             {productPageHeaderImages.map((item, i) => {
-              return <GeneralProductCardCoverImg key={i} {...item} />;
+              return (
+                <GeneralProductCardCoverImg
+                  textAlign="center"
+                  titleTextColor="#fff"
+                  valueTextColor="#fff"
+                  positionTop={40}
+                  positionLeft={8}
+                  paddingTop={0}
+                  paddingBottom={0}
+                  imgHeight={""}
+                  key={i}
+                  {...item}
+                />
+              );
             })}
           </Container>
         </Container>
@@ -49,8 +58,8 @@ function Product() {
 
       {/* second section */}
       <Section>
-        <Container className={styles.secondSection}>
-          <Container>
+        <Container className={styles.secondSection} paddingBottom={10}>
+          <Container paddingTop={5} paddingBottom={5}>
             <div className={styles.secondSectionHeaderBox}>
               <h6>Showing all 12 results</h6>
               <div className={styles.secondSectionViewBox}>
@@ -76,35 +85,49 @@ function Product() {
               </div>
             </div>
           </Container>
-          <Container>
+          <Container
+            display="grid"
+            gap={5}
+            className={styles.secondSectionProductCardContainer}
+          >
             {productImages.map((item) => (
-              <GeneralProductCard margin={0} key={item.id} {...item}>
+              <GeneralProductCard
+                childElement1={<GlobalColorsBox />}
+                margin={0}
+                key={item.id}
+                {...item}
+              >
                 <GeneralInfoCard />
               </GeneralProductCard>
             ))}
           </Container>
 
-          <Container
-            display="flex"
-            justifyContent="center"
-            className={styles.secondSectionControlBtnBox}
-          >
-            <button>First</button>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>Next</button>
-          </Container>
+          <aside>
+            <Container
+              display="flex"
+              className={styles.secondSectionControlBtnBox}
+            >
+              <button>First</button>
+              <button>1</button>
+              <button>2</button>
+              <button>3</button>
+              <button>Next</button>
+            </Container>
+          </aside>
         </Container>
       </Section>
 
       {/* third section */}
       <Section>
         <Container
+          bgColor="#FAFAFA"
           display="grid"
-          gap={4}
+          justifyItems="center"
+          alignItems="center"
+          gap={10}
           paddingBottom={10}
-          className="removeMarginFromContainer threeColumnGridLayout"
+          paddingTop={10}
+          className="logoColumnGridLayout"
         >
           {seventhSectionData.map((logo) => (
             <LogoImage key={logo.id} {...logo} />

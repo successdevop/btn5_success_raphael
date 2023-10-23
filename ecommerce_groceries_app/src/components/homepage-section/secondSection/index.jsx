@@ -22,7 +22,11 @@ function index() {
         paddingBottom={8}
         className="customStyleForSecondSection"
       >
-        <GeneralProductCardCoverImg img={rootsAndGrain} />
+        <GeneralProductCardCoverImg
+          positionTop={10}
+          positionLeft={10}
+          img={rootsAndGrain}
+        />
         <Container display="grid" gap={4} className="removeMarginFromContainer">
           <ProductHeaderNav>
             <MainHeaderText />
