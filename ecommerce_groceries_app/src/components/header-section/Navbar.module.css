@@ -1,5 +1,13 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: #fff;
+  box-shadow: 0 0.2rem 2rem rgb(0, 0, 0, 0.05);
+}
+
 .navbarContainer {
-  height: 53.2rem;
+  max-width: 120rem;
   padding: 3.4rem;
   background-color: #fff;
   position: relative;
@@ -8,103 +16,156 @@
   justify-content: space-between;
 }
 
-.navbarNavMobile {
-  display: grid;
-  gap: 3rem;
-  justify-items: center;
-  justify-content: center;
-
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.navbarNavMobile a:link,
-.navbarNavMobile a:visited {
-  color: #737373;
-  font-size: 3rem;
-  line-height: 1.5;
-  letter-spacing: 0.2rem;
-  font-weight: 500;
-}
-
-.navIconsMobile {
+.navIcons {
   display: flex;
   gap: 2rem;
 }
 
-.navIcon {
-  height: 2.5rem;
-  width: 2.5rem;
-  color: #252b42;
+.navLinksContainer {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  flex-direction: column;
+  gap: 3rem;
+  display: none;
 }
 
-.desktopContainer {
+.navLinksContainer.open {
+  display: flex;
+}
+
+.navbarNav {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.navbarNav a:link,
+.navbarNav a:visited {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #737373;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 4.5rem;
+  letter-spacing: 0.02rem;
+  transition: all 0.3s;
+}
+
+.navbarNav a:hover,
+.navbarNav a:active {
+  color: #23a6f0;
+}
+
+.navbarNav2 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbarNav2 button {
+  display: flex;
+  padding: 1.5rem;
+  align-items: center;
+  gap: 0.5rem;
+  border: none;
+  background: transparent;
+  color: #23a6f0;
+}
+
+.navbarNav2 button span {
+  font-size: 2.5rem;
+  letter-spacing: 0.1rem;
+}
+
+.loginAndBecomeAMember {
   display: none;
 }
 
 /* FOR MINI-TABLETS, TABLET AND DESKTOPS */
-@media screen and (min-width: 912px) {
-  .navbarNavMobile {
+@media screen and (min-width: 1024px) {
+  .navIcons {
     display: none;
   }
 
-  .navIconsMobile {
-    display: none;
+  .loginAndBecomeAMember {
+    display: flex;
+    align-items: center;
+    text-align: right;
+    gap: 4.5rem;
   }
 
   .navbarContainer {
-    height: 9.1rem;
-    max-width: 120rem;
+    height: 9.1rem !important;
     margin: 0 auto;
-    padding: 3.4rem;
-    background-color: #fff;
+    padding: 3.4rem 1.7rem;
     align-items: center;
   }
 
-  .desktopContainer {
-    display: flex;
+  .navLinksContainer {
+    display: flex !important;
+    position: static;
+    flex-direction: row;
+    transform: translate(0%, 0%);
     justify-content: space-between;
-    gap: 5rem;
+    gap: 11rem;
   }
 
-  .navbarNavDesktop {
-    display: flex;
-    align-items: center;
-    gap: 1.2rem;
+  .navbarNav {
+    flex-direction: row;
+    gap: 1.5rem;
   }
 
-  .navbarNavDesktop a:link,
-  .navbarNavDesktop a:visited,
-  .navIconsDesktop {
+  .navbarNav2 {
+    flex-direction: row;
+  }
+
+  .navbarNav a:link,
+  .navbarNav a:visited,
+  .loginAndBecomeAMember a:link,
+  .loginAndBecomeAMember a:visited,
+  .navbarNav2 button span {
     font-size: 1.4rem;
     font-weight: 700;
     line-height: 2.4rem;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.02rem;
     color: #737373;
+    font-style: normal;
   }
 
-  .navIconsDesktop {
+  .navbarNav a:hover,
+  .navbarNav a:active {
     color: #23a6f0;
+  }
 
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
+  .loginAndBecomeAMember a:link,
+  .loginAndBecomeAMember a:visited,
+  .navbarNav2 button span {
+    color: #23a6f0;
+  }
+
+  .userNavIcons {
+    height: 1.6rem;
+    width: 1.6rem;
+  }
+
+  .navbarNav2 li:first-child .userNavIcons {
+    height: 1.2rem;
+    width: 1.2rem;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .navbarContainer {
-    justify-content: start;
-    gap: 20rem;
+    padding: 3.4rem 1rem;
   }
 
-  .desktopContainer {
-    flex: 1;
-  }
-
-  .navbarNavDesktop {
-    gap: 1.5rem;
+  .navLinksContainer {
+    gap: 17rem;
   }
 }

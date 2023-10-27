@@ -8,10 +8,12 @@ import SeventhSection from "./seventhSection/index";
 import EightSection from "./eightSection/index";
 import Header from "../header-section/Header";
 import Footer from "../footer-section/Footer";
+import Navbar from "../header-section/Navbar";
 
 function Main() {
   return (
     <>
+      <Navbar />
       <Header />
       <main>
         <FirstSection />

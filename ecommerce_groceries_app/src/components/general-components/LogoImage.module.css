@@ -1,10 +1,28 @@
+.brandLogoImgBox {
+  display: grid;
+  place-items: center;
+  gap: 5rem;
+  padding: 5rem 0;
+
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
 .logoImage {
-  width: 14.9rem;
-  height: auto;
+  display: block;
+  object-fit: contain;
+  width: 10rem;
+  height: 10rem;
+}
+
+@media screen and (min-width: 768px) {
+  .brandLogoImgBox {
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  }
 }
 
 @media screen and (min-width: 1200px) {
-  .logoImage {
-    width: auto;
+  .brandLogoImgBox {
+    grid-template-columns: repeat(6, 1fr);
   }
 }

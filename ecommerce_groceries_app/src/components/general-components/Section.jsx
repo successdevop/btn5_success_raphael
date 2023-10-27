@@ -1,8 +1,12 @@
-function Section({ bgColor = "#fff", children }) {
+function Section({ bgColor = "#fff", children, className }) {
   const sectionStyles = {
     backgroundColor: bgColor,
   };
-  return <section style={sectionStyles}>{children}</section>;
+  return (
+    <section className={className ?? ""} style={sectionStyles}>
+      {children}
+    </section>
+  );
 }
 
 export default Section;

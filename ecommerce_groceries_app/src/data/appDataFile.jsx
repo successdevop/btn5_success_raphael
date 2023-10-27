@@ -17,7 +17,7 @@ import bgImgBuilding from "../assets/featuredImg/bgImgBuilding.svg";
 import bgImgCarBuilding from "../assets/featuredImg/bgImgCarBuilding.svg";
 import bgImgUmbrella from "../assets/featuredImg/bgImgUmbrella.svg";
 
-import { BsTelephone } from "react-icons/bs";
+import { BsChevronDown, BsTelephone } from "react-icons/bs";
 import { CiLocationOn } from "react-icons/ci";
 import { FiSend } from "react-icons/fi";
 
@@ -94,7 +94,7 @@ export const sixthSectionData = [
   },
 ];
 
-export const seventhSectionData = [
+export const brandLogoImgData = [
   {
     id: 1,
     img: faBrands1,
@@ -134,6 +134,22 @@ export const eightSectionData = [
     id: 3,
     img: bgImgUmbrella,
   },
+];
+
+export const headerMenuItems1 = [
+  { id: 1, menu: "Home", href: "#" },
+  { id: 2, menu: "Product", href: "#" },
+  { id: 3, menu: "Pricing", href: "#" },
+  { id: 4, menu: "Contact", href: "#" },
+];
+
+export const headerMenuItems2 = [
+  { id: 1, menu: "Home", href: "#", icon: "" },
+  { id: 2, menu: "Shop", href: "#", icon: BsChevronDown },
+  { id: 3, menu: "About", href: "#", icon: "" },
+  { id: 4, menu: "Blog", href: "#", icon: "" },
+  { id: 5, menu: "Contact", href: "#", icon: "" },
+  { id: 6, menu: "Pages", href: "#", icon: "" },
 ];
 
 export const footerData = [
