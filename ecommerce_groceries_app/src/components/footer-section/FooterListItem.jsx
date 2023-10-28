@@ -1,27 +1,22 @@
 import styles from "./FooterListItem.module.css";
+import PropTypes from "prop-types";
 
-function FooterListItem({
-  item1 = "",
-  item2 = "",
-  item3 = "",
-  item4 = "",
-  item5 = "",
-  img2,
-  img3,
-  img4,
-  items,
-}) {
+function FooterListItem({ otherPage, itemHeader, items }) {
   return (
     <ul className={styles.footerListItem}>
-      <li>{item1}</li>
+      <li style={{ color: otherPage && "#252B42" }}>{itemHeader}</li>
       {items?.map((item, i) => (
-        <li key={i}>
-          {item.img2 && <item.img2 className={styles.icon} />}
-          {item.item2}
+        <li style={{ color: otherPage && "#737373" }} key={i}>
+          {item.item}
         </li>
       ))}
     </ul>
   );
 }
 
+FooterListItem.propTypes = {
+  itemHeader: PropTypes.string,
+  items: PropTypes.array,
+  otherPage: PropTypes.bool,
+};
 export default FooterListItem;

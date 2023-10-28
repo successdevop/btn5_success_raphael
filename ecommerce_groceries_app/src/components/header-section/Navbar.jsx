@@ -77,41 +77,43 @@ function Navbar({ displaySecondMenu = true, isLoginPage }) {
                 ))}
           </ul>
           {/*  */}
-          {displaySecondMenu && (
-            <ul className={styles.navbarNav2}>
-              <li>
-                <Link>
-                  <button>
-                    <FaRegUser size={"2rem"} className={styles.userNavIcons} />
-                    <span>Login/Register</span>
-                  </button>
-                </Link>
-              </li>
-              <li>
-                <Link>
-                  <button>
-                    <BiSearch size={"2.5rem"} className={styles.userNavIcons} />
-                  </button>
-                </Link>
-              </li>
-              <li>
-                <Link>
-                  <button>
-                    <BsCart size={"2.5rem"} className={styles.userNavIcons} />{" "}
-                    {1}
-                  </button>
-                </Link>
-              </li>
-              <li>
-                <Link>
-                  <button>
-                    <BsHeart size={"2.5rem"} className={styles.userNavIcons} />
-                    {1}
-                  </button>
-                </Link>
-              </li>
-            </ul>
-          )}
+
+          <ul
+            className={styles.navbarNav2}
+            style={{ display: !displaySecondMenu && "none" }}
+          >
+            <li>
+              <Link>
+                <button>
+                  <FaRegUser size={"2rem"} className={styles.userNavIcons} />
+                  <span>Login/Register</span>
+                </button>
+              </Link>
+            </li>
+            <li>
+              <Link>
+                <button>
+                  <BiSearch size={"2.5rem"} className={styles.userNavIcons} />
+                </button>
+              </Link>
+            </li>
+            <li>
+              <Link>
+                <button>
+                  <BsCart size={"2.5rem"} className={styles.userNavIcons} /> {1}
+                </button>
+              </Link>
+            </li>
+            <li>
+              <Link>
+                <button>
+                  <BsHeart size={"2.5rem"} className={styles.userNavIcons} />
+                  {1}
+                </button>
+              </Link>
+            </li>
+          </ul>
+
           {isLoginPage && (
             <div className={styles.loginAndBecomeAMember}>
               <Link>Login</Link>

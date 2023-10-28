@@ -17,9 +17,7 @@ import bgImgBuilding from "../assets/featuredImg/bgImgBuilding.svg";
 import bgImgCarBuilding from "../assets/featuredImg/bgImgCarBuilding.svg";
 import bgImgUmbrella from "../assets/featuredImg/bgImgUmbrella.svg";
 
-import { BsChevronDown, BsTelephone } from "react-icons/bs";
-import { CiLocationOn } from "react-icons/ci";
-import { FiSend } from "react-icons/fi";
+import { BsChevronDown } from "react-icons/bs";
 
 import productHeaderImg1 from "../assets/productPageImages/productHeaderImg1.svg";
 import productHeaderImg2 from "../assets/productPageImages/productHeaderImg2.svg";
@@ -137,86 +135,61 @@ export const eightSectionData = [
 ];
 
 export const headerMenuItems1 = [
-  { id: 1, menu: "Home", href: "#" },
-  { id: 2, menu: "Product", href: "#" },
-  { id: 3, menu: "Pricing", href: "#" },
-  { id: 4, menu: "Contact", href: "#" },
+  { id: 1, menu: "Home", href: "/" },
+  { id: 2, menu: "Product", href: "/product" },
+  { id: 3, menu: "Pricing", href: "/pricing" },
+  { id: 4, menu: "Contact", href: "/contact" },
 ];
 
 export const headerMenuItems2 = [
-  { id: 1, menu: "Home", href: "#", icon: "" },
-  { id: 2, menu: "Shop", href: "#", icon: BsChevronDown },
-  { id: 3, menu: "About", href: "#", icon: "" },
-  { id: 4, menu: "Blog", href: "#", icon: "" },
-  { id: 5, menu: "Contact", href: "#", icon: "" },
-  { id: 6, menu: "Pages", href: "#", icon: "" },
+  { id: 1, menu: "Home", href: "/", icon: "" },
+  { id: 2, menu: "Shop", href: "shop", icon: BsChevronDown },
+  { id: 3, menu: "About", href: "about", icon: "" },
+  { id: 4, menu: "Blog", href: "blog", icon: "" },
+  { id: 5, menu: "Contact", href: "/contact", icon: "" },
+  { id: 6, menu: "Pages", href: "pages", icon: "" },
 ];
 
 export const footerData = [
   {
     id: 1,
-    item1: "Company Info",
-    img2: "",
-    item2: "About Us",
-    img3: "",
-    item3: "Carrier",
-    img4: "",
-    item4: "We are hiring",
-    item5: "Blog",
+    itemHeader: "Company Info",
+    items: [
+      { item: "About Us" },
+      { item: "Carrier" },
+      { item: "We are hiring" },
+      { item: "Blog" },
+    ],
   },
   {
     id: 2,
-    item1: "Legal",
-    img2: "",
-    item2: "About Us",
-    img3: "",
-    item3: "Carrier",
-    img4: "",
-    item4: "We are hiring",
-    item5: "Blog",
+    itemHeader: "Legal",
+    items: [
+      { item: "About Us" },
+      { item: "Carrier" },
+      { item: "We are hiring" },
+      { item: "Blog" },
+    ],
   },
   {
     id: 3,
-    item1: "Features",
-    img2: "",
-    item2: "Business Marketing",
-    img3: "",
-    item3: "User Analytic",
-    img4: "",
-    item4: "Live Chat",
-    item5: "Unlimited Support",
+    itemHeader: "Features",
+    items: [
+      { item: "Business Marketing" },
+      { item: "User Analytic" },
+      { item: "Live Chat" },
+      { item: "Unlimited Support" },
+    ],
   },
   {
     id: 4,
-    item1: "Resources",
-
-    img3: "",
-
-    img4: "",
-    item4: "Customers",
-    item5: "API",
-    item: [
-      {
-        item2: "IOS & Android",
-      },
-      {
-        item2: "Watch a Demo",
-      },
-    ],
-  },
-  {
-    id: 5,
-    item1: "Get In Touch",
+    itemHeader: "Resources",
     items: [
-      {
-        img2: BsTelephone,
-        item2: "IOS & Android",
-      },
-      { img2: CiLocationOn, item2: "Watch a Demo" },
+      { item: "IOS & Android" },
+      { item: "Watch a Demo" },
+      { item: "Customers" },
+      { item: "API" },
     ],
-
-    img4: FiSend,
-    item4: "Customers",
   },
 ];
 

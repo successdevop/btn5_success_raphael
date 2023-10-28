@@ -1,0 +1,231 @@
+footer {
+  padding-top: 4rem;
+}
+
+.footerTopHeader {
+  padding-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  align-items: start;
+}
+
+.footerTopHeader2 {
+  padding-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.3rem;
+}
+
+.footerHeaderIcons {
+  display: flex;
+  gap: 2rem;
+}
+
+.footerTopHeaderInnerBox {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footerTopHeaderInnerBox h3,
+.footerTopHeaderInnerBox p {
+  color: #fff;
+  font-style: normal;
+}
+
+.footerTopHeaderInnerBox h3 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 3.2rem;
+  letter-spacing: 0.01rem;
+}
+
+.footerTopHeaderInnerBox p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2rem;
+  letter-spacing: 0.02rem;
+}
+
+.getInTouch {
+  display: grid;
+  gap: 2rem;
+}
+
+.getInTouch li {
+  color: #fff;
+  font-family: inherit;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  letter-spacing: 0.2rem;
+
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.getInTouch li:first-child {
+  font-size: 1.7rem;
+}
+
+.subscribe {
+  width: 32.1rem;
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.subscribe input:first-child {
+  display: flex;
+  width: 20.4rem;
+  padding: 1.5rem 2rem 1.5rem 2rem;
+  align-items: center;
+  border-radius: 0.5rem 0rem 0rem 0.5rem;
+  border: 1px solid #e6e6e6;
+  background: #f9f9f9;
+}
+
+.subscribe input:last-child {
+  display: flex;
+  width: 11.7rem;
+  height: 5.8rem;
+  padding: 1.5rem 2.25rem;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+
+  border-radius: 0rem 0.5rem 0.5rem 0rem;
+  border: 1px solid #e6e6e6;
+  background: #23a6f0;
+
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.8rem;
+  letter-spacing: 0.02rem;
+}
+
+.emailText {
+  color: #737373;
+  font-size: 1.2rem;
+  line-height: 2.8rem;
+  letter-spacing: 0.02rem;
+}
+
+.footerBottomContent {
+  padding: 2.5rem 4.4rem;
+  display: grid;
+  gap: 5rem !important;
+}
+
+.footerBottomContent h6 {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  letter-spacing: 0.02rem;
+}
+
+.footerBottomIcons {
+  display: flex;
+  gap: 2rem;
+}
+
+.getInTouchIcon {
+  font-size: 2.4rem;
+  color: #8ec2f2;
+}
+
+.getInTouchIcon2 {
+  display: none;
+}
+
+.desktop {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    padding-top: 8rem;
+  }
+
+  .footerLinks {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 7rem !important;
+  }
+}
+
+@media screen and (min-width: 912px) {
+  .footerTopHeader {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .footerTopHeader button {
+    justify-self: end;
+  }
+
+  .footerTopHeader2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footerHeaderIcons {
+    justify-self: end;
+  }
+
+  .footerBottomContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .footerBottomContent h6 {
+    text-align: left !important;
+  }
+
+  .footerBottomIcons {
+    justify-self: end;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .footerLinks {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footerLinks {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.5 !important;
+  }
+
+  .getInTouchIcon2 {
+    display: block;
+  }
+
+  .getInTouchIcon.getInTouchIcon2A {
+    display: none;
+  }
+
+  .getInTouchIcon {
+    color: #fff;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: block;
+  }
+
+  .footerBottomContent {
+    padding-left: 0rem;
+  }
+}

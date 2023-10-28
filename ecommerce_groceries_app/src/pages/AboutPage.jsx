@@ -1,4 +1,4 @@
-import styles from "./ContactPage.module.css";
+import styles from "./AboutPage.module.css";
 import Section from "../components/general-components/Section";
 import Container from "../components/general-components/Container";
 import GlobalButton from "../components/general-components/GlobalButton";

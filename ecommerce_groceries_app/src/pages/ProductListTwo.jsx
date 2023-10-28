@@ -12,10 +12,11 @@ import chair2 from "../assets/productPage2Images/product2Image2.svg";
 import frameImg from "../assets/productPage2Images/product2Image3.svg";
 import { Link } from "react-router-dom";
 import MainHeaderText from "../components/general-components/MainHeaderText";
-import { productPage2Images, seventhSectionData } from "../data/appDataFile";
+import { productPage2Images } from "../data/appDataFile";
 import GeneralProductCard from "../components/general-components/GeneralProductCard";
 import GeneralInfoCard from "../components/general-components/GeneralInfoCard";
 import LogoImage from "../components/general-components/LogoImage";
+import BrandLogoImg from "../components/general-components/LogoImage";
 
 function ProductListTwo() {
   return (
@@ -238,22 +239,7 @@ function ProductListTwo() {
       </Section>
 
       {/* fourth section */}
-      <Section>
-        <Container
-          bgColor="#FAFAFA"
-          paddingTop={7}
-          paddingBottom={10}
-          display="grid"
-          gap={7}
-          justifyItems="center"
-          alignItems="center"
-          className="fourColumnGridLayoutAndAbove logoColumnGridLayout"
-        >
-          {seventhSectionData.map((item) => (
-            <LogoImage key={item.id} {...item} />
-          ))}
-        </Container>
-      </Section>
+      <BrandLogoImg />
     </>
   );
 }

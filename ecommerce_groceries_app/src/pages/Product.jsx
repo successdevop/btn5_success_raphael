@@ -2,19 +2,16 @@ import Container from "../components/general-components/Container";
 import Section from "../components/general-components/Section";
 import styles from "./Product.module.css";
 import { IconBars } from "../UtilityIcons/IconFile";
-import {
-  productImages,
-  productPageHeaderImages,
-  seventhSectionData,
-} from "../data/appDataFile";
+import { productImages, productPageHeaderImages } from "../data/appDataFile";
 import GeneralProductCardCoverImg from "../components/general-components/GeneralProductCardCoverImg";
 import { IconViewBox } from "../UtilityIcons/IconFile";
 import GlobalButton from "../components/general-components/GlobalButton";
 import GeneralProductCard from "../components/general-components/GeneralProductCard";
 import GeneralInfoCard from "../components/general-components/GeneralInfoCard";
-import LogoImage from "../components/general-components/LogoImage";
+
 import GlobalColorsBox from "../components/general-components/GlobalColorsBox";
 import BreadCrumbComponent from "../components/general-components/BreadCrumbComponent";
+import BrandLogoImg from "../components/general-components/LogoImage";
 
 function Product() {
   return (
@@ -118,22 +115,7 @@ function Product() {
       </Section>
 
       {/* third section */}
-      <Section>
-        <Container
-          bgColor="#FAFAFA"
-          display="grid"
-          justifyItems="center"
-          alignItems="center"
-          gap={10}
-          paddingBottom={10}
-          paddingTop={10}
-          className="logoColumnGridLayout"
-        >
-          {seventhSectionData.map((logo) => (
-            <LogoImage key={logo.id} {...logo} />
-          ))}
-        </Container>
-      </Section>
+      <BrandLogoImg />
     </>
   );
 }
