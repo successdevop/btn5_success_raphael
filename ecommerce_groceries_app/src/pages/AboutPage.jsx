@@ -11,7 +11,7 @@ import contact3Img from "../assets/contactImg/contact3.svg";
 import contact4Img from "../assets/contactImg/contact4.svg";
 import contact5Img from "../assets/contactImg/contact5.svg";
 import contactVideo from "../assets/contactImg/contactVideo.svg";
-import BrandLogoImg from "../components/general-components/LogoImage";
+import BrandLogoImg from "../components/general-components/BrandLogoImg";
 
 const contactImages = [contact2Img, contact3Img, contact4Img];
 

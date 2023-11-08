@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 function Section({ bgColor = "#fff", children, className }) {
   const sectionStyles = {
     backgroundColor: bgColor,

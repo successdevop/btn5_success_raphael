@@ -1,0 +1,338 @@
+/*******************/
+/* FIRST SECTION */
+/*******************/
+.firstSection h5,
+.firstSection h2 {
+  text-align: center;
+  font-weight: 700;
+}
+
+.firstSection h5 {
+  color: #737373;
+
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  letter-spacing: 0.01rem;
+}
+
+.firstSection h2 {
+  color: #252b42;
+  font-size: 4rem;
+  line-height: 5rem;
+  letter-spacing: 0.02rem;
+}
+
+.firstSectionIcon {
+  width: 0.7rem;
+  height: 1.2rem;
+}
+
+.firstSectionInnerBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+
+  color: #737373;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  letter-spacing: 0.02rem;
+}
+
+.firstSectionInnerBox a {
+  color: #252b42;
+}
+
+.firstSectionFirstBox {
+  display: grid;
+  gap: 1.6rem;
+}
+
+@media screen and (min-width: 1200px) {
+  .firstSection h2 {
+    font-size: 5.8rem;
+    line-height: 8rem;
+  }
+}
+
+/*******************/
+/* SECOND SECTION */
+/*******************/
+.firstDiv {
+  text-align: center;
+}
+
+.firstDiv h2,
+.firstDiv p {
+  letter-spacing: 0.02rem;
+}
+
+.firstDiv h2 {
+  color: #252b42;
+
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 5rem;
+  margin-bottom: 1rem;
+}
+
+.firstDiv p {
+  color: #737373;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2rem;
+  width: 26.2rem;
+}
+
+.secondDiv {
+  color: #252b42;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  letter-spacing: 0.01rem;
+  display: flex;
+  gap: 1.6rem;
+}
+
+.secondDivControlBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.secondDivBtn {
+  width: 4.5rem;
+  height: 2.5rem;
+  flex-shrink: 0;
+  border: #23a6f0 1px solid;
+  border-radius: 1.6rem;
+  background-color: #fff;
+  padding: 0.2rem 0.3rem;
+
+  display: flex;
+  align-items: center;
+}
+
+.secondDivBtnCtrl {
+  width: 2.25rem;
+  height: 1.7rem;
+  flex-shrink: 0;
+  border-radius: 50%;
+  border: 1px solid #d0d0d0;
+
+  background-color: #ebebeb;
+}
+
+.secondDiv > button {
+  color: #23a6f0;
+  font-size: 1.4rem;
+  font-family: inherit;
+  font-weight: 700;
+
+  display: flex;
+  flex-shrink: 0;
+  padding: 1rem 2rem;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 3.7rem;
+  background: #b2e3ff;
+}
+
+@media screen and (min-width: 768px) {
+  .firstDiv p {
+    width: 46.9rem;
+  }
+
+  .pricingCardContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .pricingCardContainer {
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: end;
+    gap: 0 !important;
+  }
+
+  .pricingCardContainer > div:nth-child(2) {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+}
+
+/*******************/
+/* THIRD SECTION */
+/*******************/
+.thirdSection {
+  padding: 8.4rem 5.4rem;
+}
+
+.thirdSectionHeader {
+  color: #252b42;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 3rem;
+  letter-spacing: 0.02rem;
+}
+
+/*******************/
+/* FOURTH SECTION */
+/*******************/
+.fourthSectionHeaderBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.fourthSectionHeader,
+.fourthSectionText {
+  text-align: center;
+  letter-spacing: 0.02rem;
+}
+
+.fourthSectionHeader {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 5rem;
+}
+
+.fourthSectionText {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2rem;
+  width: 28rem;
+}
+
+.fourthSectionListItem {
+  display: flex;
+  padding: 1.6rem 0rem;
+  flex-direction: column;
+}
+
+.fourthSectionList1 {
+  display: flex;
+  align-items: center;
+}
+
+.fourthSectionIcon {
+  display: none;
+}
+
+.fourthSectionListItemHeader {
+  color: #252b42;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  letter-spacing: 0.01rem;
+  padding: 1.6rem 2.4rem;
+}
+
+.fourthSectionListItemText {
+  color: #737373;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  letter-spacing: 0.02rem;
+  padding: 1.6rem 2.4rem;
+}
+
+.fourthSectionFooterInfo {
+  color: #737373;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 3rem;
+  letter-spacing: 0.02rem;
+}
+
+@media screen and (min-width: 768px) {
+  .fourthSectionHeaderBox {
+    gap: 0.5rem;
+  }
+
+  .fourthSectionText {
+    font-size: 2rem;
+    line-height: 3rem;
+    width: 55.2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .fourthSection {
+    gap: 5rem !important;
+  }
+
+  .fourthSectionList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .fourthSectionIcon {
+    display: block;
+  }
+
+  .fourthSectionListItem {
+    padding: 2.5rem;
+  }
+
+  .fourthSectionList1 {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
+  }
+
+  .fourthSectionListItemHeader {
+    padding: 0;
+  }
+
+  .fourthSectionListItemText {
+    padding: 0;
+    padding-left: 3rem;
+  }
+}
+
+/*******************/
+/* FIFTH SECTION */
+/*******************/
+/* .fifthSection {
+  display: flex;
+  padding: 0rem 4.05rem 1rem 4.15rem;
+  flex-direction: column;
+  align-items: center;
+} */
+
+/* .fifthSectionInnerBox {
+  display: flex;
+  padding: 11.2rem 0rem !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem !important;
+} */
+
+.fifthSectionHeader {
+  color: #252b42;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 5rem;
+  letter-spacing: 0.02rem;
+  text-align: center;
+}
+
+.fifthSectionText {
+  color: #737373;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  letter-spacing: 0.02rem;
+  text-align: center;
+  max-width: 41.1rem;
+}
+
+.fifthSectionSocialIcons {
+  display: flex;
+  align-items: center;
+  gap: 3.4rem;
+}

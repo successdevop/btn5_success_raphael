@@ -11,7 +11,7 @@ import GeneralInfoCard from "../components/general-components/GeneralInfoCard";
 
 import GlobalColorsBox from "../components/general-components/GlobalColorsBox";
 import BreadCrumbComponent from "../components/general-components/BreadCrumbComponent";
-import BrandLogoImg from "../components/general-components/LogoImage";
+import BrandLogoImg from "../components/general-components/BrandLogoImg";
 
 function Product() {
   return (

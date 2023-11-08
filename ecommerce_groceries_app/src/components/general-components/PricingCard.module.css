@@ -1,0 +1,106 @@
+.pricingCard {
+  padding: 5rem 4rem;
+  text-align: center;
+  font-style: normal;
+
+  border: 1px solid #23a6f0;
+}
+
+.pricingCardContentBox {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+
+.pricingCardContentBoxType,
+.pricingCardContentBoxTypeInfo,
+.pricingCardPriceSymbol {
+  font-weight: 700;
+  letter-spacing: 0.01rem;
+}
+
+.pricingCardContentBoxType,
+.pricingCardPriceSymbol {
+  color: #252b42;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+}
+
+.pricingCardContentBoxTypeInfo {
+  color: #737373;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  width: 16rem;
+  margin: 0 auto;
+}
+
+.pricingCardPriceInfoBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  color: #23a6f0;
+}
+
+.pricingCardPrice {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 5rem;
+  letter-spacing: 0.02rem;
+}
+
+.pricingCardPriceDuration {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.pricingCardPriceSymbol {
+  color: #23a6f0;
+  justify-self: flex-start;
+}
+
+.PricingCardPriceInfo,
+.pricingCardListText {
+  color: #8ec2f2;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 2.4rem;
+  letter-spacing: 0.02rem;
+}
+
+.pricingCardList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  color: #252b42;
+}
+
+.pricingCardListItem {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.pricingCardListCheckBox {
+  display: flex;
+  width: 3.2rem;
+  height: 3.2rem;
+  padding: 1rem 0.8rem 1.1rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20rem;
+  background: #2dc071;
+}
+
+.pricingCardListText {
+  color: inherit;
+  font-weight: 700;
+  text-align: left;
+}
+
+@media screen and (min-width: 1024px) {
+  .pricingCard {
+    border-radius: 1rem;
+  }
+}

@@ -1,5 +1,5 @@
 import { brandLogoImgData } from "../../data/appDataFile";
-import styles from "./LogoImage.module.css";
+import styles from "./BrandLogoImg.module.css";
 import PropTypes from "prop-types";
 
 function BrandLogoImg({
@@ -31,5 +31,9 @@ function BrandLogoImg({
 
 BrandLogoImg.propTypes = {
   bgColor: PropTypes.string,
+  paddingTop: PropTypes.number,
+  paddingRight: PropTypes.number,
+  paddingBottom: PropTypes.number,
+  paddingLeft: PropTypes.number,
 };
 export default BrandLogoImg;

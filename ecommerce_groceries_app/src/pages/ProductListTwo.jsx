@@ -15,8 +15,8 @@ import MainHeaderText from "../components/general-components/MainHeaderText";
 import { productPage2Images } from "../data/appDataFile";
 import GeneralProductCard from "../components/general-components/GeneralProductCard";
 import GeneralInfoCard from "../components/general-components/GeneralInfoCard";
-import LogoImage from "../components/general-components/LogoImage";
-import BrandLogoImg from "../components/general-components/LogoImage";
+
+import BrandLogoImg from "../components/general-components/BrandLogoImg";
 
 function ProductListTwo() {
   return (

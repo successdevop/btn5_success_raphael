@@ -4,8 +4,8 @@ import Product from "./pages/Product";
 import PricingPage from "./pages/PricingPage";
 import ContactPage from "./pages/ContactPage";
 import AboutPage from "./pages/AboutPage";
-import BlogPage from "./pages/AboutPage";
 import ProductListTwo from "./pages/ProductListTwo";
+import ErrorPage from "./pages/ErrorPage";
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
       <Route path="/contact" element={<ContactPage />} />
       <Route path="/shop" element={<ProductListTwo />} />
       <Route path="/about" element={<AboutPage />} />
-      <Route path="/blog" element={<BlogPage />} />
+      <Route path="*" element={<ErrorPage />} />
     </Routes>
   );
 }

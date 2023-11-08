@@ -1,4 +1,4 @@
-import BrandLogoImg from "../../general-components/LogoImage";
+import BrandLogoImg from "../../general-components/BrandLogoImg";
 
 function index() {
   return <BrandLogoImg />;
